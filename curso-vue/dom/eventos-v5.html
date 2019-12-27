@@ -8,7 +8,8 @@
 
     </p>
     <a v-on:click.prevent="naoNavegar" href="http://www.google.com.br">Google</a>
-
+    <hr />
+    <input type="text" v-on:keyup.enter = "exibirAlerta"/>
 </div>
 
 <script>
@@ -32,6 +33,8 @@
                 console.log("não navegar");
                event.preventDefault();
                
+           }, exibirAlerta(event){
+               alert(event.target.value);
            }
        },
    })
