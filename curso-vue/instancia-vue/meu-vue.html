@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<div id="app">
+
+</div>
+
+
+<script>
+    function meuVue(params){
+        this.$el = document.querySelector(params.el);
+        this.$data = params.data;
+
+        for(let atr in this.$data){
+            Object.defineProperty(this, atr, {
+                get: () => {
+                    return this.$data[atr];
+                },
+                set :value =>{
+                    this.$data[atr] = value;
+                }
+            })
+        }
+    }
+
+</script>
