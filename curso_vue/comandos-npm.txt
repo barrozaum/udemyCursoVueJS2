@@ -1,0 +1,29 @@
+cmd
+
+node -v -- versão do node
+
+npm -v  -- versão do npm
+
+
+npm install -g @vue/cli -- instalando vue de forma global 
+
+
+vue create projeto-simples
+
+cd C:\Users\ibrasil\Desktop\curso_vue\vue-cli\projeto-simples
+
+npm run serve   -- roda servidor
+
+npm i     -- re instala as dependencias node model que está no package.json
+
+
+npm run build -- gerando build do projeto para levar pro servidor
+
+
+vue add electron-builder-- instalando plugin pra desck top 
+
+npm run electron:serve  -- rodando aplicação descktop
+
+npm run electron:build -- gerando build do projeto versão descktop
+
+vue add vuetify

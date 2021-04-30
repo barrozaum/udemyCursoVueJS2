@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+    <div id="app">
+        {{titulo}} {{nova.novaInfo}}
+        <button @click="alterar">Alterar</button>
+    </div>
+    
+</body>
+
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data : {
+                titulo : "Teste 1 "
+            },methods: {
+                alterar(){
+                    this.titulo += '!'
+                }
+            },
+        });
+
+
+        vm.novaInfo = "Teste"
+        console.log(vm.novaInfo)
+    </script>
+</html>
